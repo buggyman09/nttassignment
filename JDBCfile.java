@@ -12,18 +12,6 @@ public class qns {
 		System.out.println("Connection created");
 		Statement stmt = con.createStatement();
 		
-		/*String createQuery="CREATE TABLE test(ID NUMBER(2),NAME VARCHAR(10), SUBJECT VARCHAR(10),MARKS NUMBER(20))";
-		stmt.executeUpdate(createQuery);
-		
-		String insertQuery="insert into test(id, name , subject, marks) values (1, 'tina','english',30)";
-		stmt.executeUpdate(insertQuery);
-		insertQuery="insert into test(id, name , subject, marks) values (2, 'layla','english',45)";
-		stmt.executeUpdate(insertQuery);
-		insertQuery="insert into test(id, name , subject, marks) values (3, 'tom','english',48)";
-		stmt.executeUpdate(insertQuery);
-		insertQuery="insert into test(id, name , subject, marks) values (4, 'neha','english',50)";
-		stmt.executeUpdate(insertQuery);*/
-		
 		
 		ResultSet rs = stmt.executeQuery("SELECT * FROM test ");
 		
